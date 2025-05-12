@@ -4,5 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 data=xr.open_mfdataset(data)
-just trying to add something
+data1=data['rainfall']
+data1=data1.compute()
 
